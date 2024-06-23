@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color:blueviolet;color:coral">
+    <h1> Employee list</h1>
+  <table border="2px" style="background-color: aquamarine;color:brown;width:max-content;height:max-content">
+    <tr>
+        <th>empid</th>
+        <th>empname</th>
+        <th>salary</th>
+        <th>hire_date</th>
+        <th>role</th>
+
+    </tr>
+    {% for e in EQO %}
+    <tr>
+        <td>{{e.emp_id}}</td>
+        <td>{{e.emp_name}}</td>
+        <td>{{e.salary}}</td>
+        <td>{{e.hire_date}}</td>
+        <td>{{e.role}}</td>
+    </tr>
+    {% endfor %}
+  </table>  
+</body>
+</html>
